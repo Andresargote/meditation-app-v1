@@ -18,7 +18,7 @@ export default function MeditationDetails({meditation}){
                 </a>
             </Link>
             <h3>{meditation.title}</h3>
-            <audio controls preload="auto" src={`http://localhost:1337${meditation.videoUrl[0].url}`}></audio>
+            <audio controls preload="auto" src={`https://meditation-version1.herokuapp.com${meditation.videoUrl[0].url}`}></audio>
         </>
     )
 }
