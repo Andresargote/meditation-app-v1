@@ -19,7 +19,7 @@ export default function Home({meditations}) {
 }
 
 export const getStaticProps = async () => {
-  const response = await fetch("http://localhost:1337/meditations");
+  const response = await fetch("https://meditation-version1.herokuapp.com/meditations");
   const meditations = await response.json();
 
   return {

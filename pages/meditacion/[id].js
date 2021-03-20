@@ -34,7 +34,7 @@ export const getStaticProps = async (context) => {
     const {params} = context;
     const {id} = params;
 
-    const response = await fetch(`http://localhost:1337/meditations/${id}`);
+    const response = await fetch(`https://meditation-version1.herokuapp.com/meditations/${id}`);
     const meditation = await response.json();
 
     return {
