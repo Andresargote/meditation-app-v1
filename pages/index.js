@@ -18,7 +18,7 @@ export default function Home({meditations}) {
   )
 }
 
-export const getStaticProps = async () => {
+export const getServerSideProps = async () => {
   const response = await fetch("https://meditation-version1.herokuapp.com/meditations");
   const meditations = await response.json();
 
